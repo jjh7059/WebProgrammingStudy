@@ -23,7 +23,7 @@
 	
 	//JSON.parse(string) : JSON 형식의 문자값을 전달받아 자바스크립트 객체로 변환하여 반환하는 메소드
 	// => Ajax 기능으로 요청한 웹프로그램의 응답 결과를 JSON 형식의 문자값으로 제공받아 자바스크립트 객체로 변환할때 사용
-	var stu = JSON.parse(text);
+	var stu = JSON.parse(text);//var stu = eval("(" + text + ")");
 	//alert(typeof(stu));//자료형 : obejct
 	//alert(stu);//[object Object] : Object 클래스 함수로 생성된 객체
 	//alert("학번 = " + stu.num + ", 이름 = " + stu.name);
