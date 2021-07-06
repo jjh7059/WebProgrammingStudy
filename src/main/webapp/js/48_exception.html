@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+</head>
+<body>
+	<h1>예외처리(Exception Handle)</h1>
+	<hr>
+	<p>예외(Exception) : 자바스크립트 명령 실행시 발생되는 오류</p>
+	
+	<script type="text/javascript">
+	try {//예외 발생 명령
+		//var array = new Array(100);
+		var array = new Array(1000000000000000000000000000000000);
+		alert("Array 객체 생성");
+	} catch (e) {//예외 처리 명령
+		//alert("Array 객체 생성 불가");
+		alert("예외 메시지 = " + e);
+	} finally {//예외와 상관없이 무조건 실행되는 명령
+		alert("예외와 상관 없이 무조건 실행되는 명령");
+	}
+	</script>
+</body>
+</html>
